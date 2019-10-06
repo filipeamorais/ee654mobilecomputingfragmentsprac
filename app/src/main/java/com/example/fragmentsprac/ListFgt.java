@@ -1,10 +1,10 @@
 package com.example.fragmentsprac;
 
+import android.app.Fragment;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 
-import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -38,6 +38,7 @@ public class ListFgt extends Fragment {
         });
         return view;
     }
+
     public interface OnItemSelectedListener {
         void onDateTimeItemSelected(String info);
     }
@@ -51,6 +52,7 @@ public class ListFgt extends Fragment {
                     "-did not implement interface OnItemSelectedListener");
         }
     }
+
     public void updateDateTime(String dateTime) {
         DateFormat dformat;
         if(dateTime.equals("Date"))

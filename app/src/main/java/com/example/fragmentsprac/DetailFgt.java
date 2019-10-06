@@ -17,6 +17,7 @@ public class DetailFgt extends Fragment {
         View view = inflater.inflate(R.layout.detail_fgt, container, false);
         return view;
     }
+
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
